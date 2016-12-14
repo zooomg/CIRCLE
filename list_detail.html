@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semantic UI</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"></link>
+  <style type="text/css">
+    body > .ui.container {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+    iframe {
+      border: none;
+      width: calc(100% + 2em);
+      margin: 0em -1em;
+      height: 300px;
+    }
+    iframe html {
+      overflow: hidden;
+    }
+    iframe body {
+      padding: 0em;
+    }
+
+    .pusher {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .pusher > .footer {
+      flex: 1;
+    }
+
+    #content{
+      flex: 1;
+    }
+
+    .ui.container > h1 {
+      font-size: 3em;
+      text-align: center;
+      font-weight: normal;
+    }
+    .ui.container > h2.dividing.header {
+      font-size: 2em;
+      font-weight: normal;
+      margin: 4em 0em 3em;
+    }
+
+
+    .ui.table {
+      table-layout: fixed;
+    }
+
+    ::-webkit-input-placeholder {
+     text-align: center;
+   }
+
+   :-moz-placeholder { /* Firefox 18- */
+     text-align: center;  
+   }
+
+   ::-moz-placeholder {  /* Firefox 19+ */
+     text-align: center;  
+   }
+
+   :-ms-input-placeholder {  
+     text-align: center; 
+   }
+ </style>
+ <script type="text/javascript">
+  $(document)
+  .ready(function() {
+    $('#search-select')
+    .dropdown()
+    ;
+    $('#select')
+    .dropdown()
+    ;
+
+    $('#adduser')
+    .form({
+      inline : true,
+      fields: {
+        Name: {
+          identifier: 'Name',
+          rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter your name'
+          }
+          ]
+        },
+        Dept: {
+          identifier: 'Dept',
+          rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please select a dept'
+          }
+          ]
+        },
+        Gender: {
+          identifier: 'Gender',
+          rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please select a gender'
+          }
+          ]
+        },
+        Grade: {
+          identifier: 'Grade',
+          rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter a grade'
+          },
+          {
+            type   : 'integer[1..5]',
+            prompt : 'Grade must be 1 to 5'
+          }
+          ]
+        },
+        Student_ID: {
+          identifier: 'Student_ID',
+          rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter a s_id'
+          },
+          {
+            type   : 'exactLength[10]',
+            prompt : 'Student_ID must be {ruleValue} characters'
+          }
+          ]
+        },
+        Email: {
+          identifier: 'Email',
+          rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter an email'
+          },
+          {
+            type   : 'email',
+            prompt : 'Please enter a valid email address'
+          }
+          ]
+        },
+        Phone_Num: {
+          identifier: 'Phone_Num',
+          rules: [
+          {
+            type   : 'empty',
+            prompt : 'Please enter a phone number'
+          },
+          {
+            type   : 'regExp[([0-1]{3})([ .-]?)([0-9]{4})([ .-]?)([0-9]{4})]',
+            prompt : 'Ex)010 1010 1010'
+          }
+          ]
+        }
+      }
+    })
+    ;
+
+  });
+</script>
+</head>
+<body>
+<div class="pusher">
+	<div class="ui secondary menu">
+		<h3 class="header item">Circle</h3>
+		<a href="./info.html" class="item">info</a>
+		<a href="./list.html" class="item">list</a>
+		<a href="./activity.html" class="item">active</a>
+    <a href="./accounting.html" class="item">account</a>
+    <div class="right menu">
+      <div class="item">
+        <div class="ui action left icon input">
+          <i class="search icon"></i>
+          <input type="text" placeholder="Search">
+          <button class="ui button">Submit</button>
+        </div>
+      </div>
+      <a class="item">Logout</a>
+    </div>
+  </div>
+  <div id="content">
+  <h4 class="ui horizontal divider header">
+    <i class="users icon"></i>
+  </h4>
+  <div class="ui container">
+   <div class="column">
+    <table class="ui editable very basic center aligned selectable table">
+      <thead>
+        <tr>
+          <th>Person</th>
+          <th>Dept</th>
+          <th>Grade</th>
+          <th>Student_ID</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Phone_Num</th>
+          <th>Dues</th>
+        </tr></thead>
+        <tbody class="center aligned">
+          <tr>
+            <td>Drema</td>
+            <td>Comp.Sci</td>
+            <td>2</td>
+            <td>2015000000</td>
+            <td><i class="man icon"></i></td>
+            <td>a@gmail.com</td>
+            <td>010-0000-0000</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Nona</td>
+            <td>Comp.Sci</td>
+            <td>2</td>
+            <td>2015000000</td>
+            <td><i class="woman icon"></i></td>
+            <td>a@gmail.com</td>
+            <td>010-0000-0000</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Isidra</td>
+            <td>Comp.Sci</td>
+            <td>4</td>
+            <td>2013000000</td>
+            <td><i class="woman icon"></i></td>
+            <td>a@gmail.com</td>
+            <td>010-0000-0000</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Bart</td>
+            <td>Comp.Sci</td>
+            <td>4</td>
+            <td>2013000000</td>
+            <td><i class="man icon"></i></td>
+            <td>a@gmail.com</td>
+            <td>010-0000-0000</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Nguyet</td>
+            <td>Comp.Sci</td>
+            <td>4</td>
+            <td>2013000000</td>
+            <td><i class="man icon"></i></td>
+            <td>a@gmail.com</td>
+            <td>010-0000-0000</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <h4 class="ui horizontal divider header">
+    <i class="user icon"></i>
+  </h4>
+  <div class="ui container">
+    <div id="adduser">
+      <form class="ui form">
+      <div class="eight fields">
+          <div class="field">
+            <div class="ui fluid transparent input">
+              <input type="text" name ="Name" placeholder="Name">
+            </div>
+          </div>
+          <div class="field">
+            <select class="ui fluid search selection dropdown" name="Dept" id="search-select">
+              <option value="">Dept</option>
+              <option value="CO">Comp.Sci</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="ui fluid transparent input">
+              <input type="text" name="Grade" placeholder="1 2 3 4"
+              maxlength="1">
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui fluid transparent input">
+              <input type="text" name="Student_ID" placeholder="Student_ID"
+              maxlength="10">
+            </div>
+          </div>
+          <div class="field">
+            <select class="ui fluid dropdown" name="Gender" id="select">
+              <option value="">Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+          <div class="field">
+            <div class="ui fluid transparent input">
+              <input type="text" placeholder="Email" name="Email">
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui fluid transparent input">
+              <input type="text" name="Phone_Num" placeholder="Phone_Num" maxlength="13">
+            </div>
+          </div>
+          <div class="ui basic submit button">
+            Add
+          </div>
+        </div>
+          <div class="ui error message"></div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="ui vertical footer segment footer">
+        <div class="ui center aligned container">
+        <br>
+            <p><i class="copyright icon"></i>2016. <b>Circle</b> All Rights Reserved.</p>
+        <br>
+        </div>
+    </div>
+</div>
+</body>
+</html>

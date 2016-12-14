@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semantic UI</title>
+
+	<!--  jQuery 1.7+  -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<!-- Include js plugin -->
+	<script type="text/javascript" src="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.js"></script>
+
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.css">
+
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.theme.css">
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+
+	<!--- Component JS -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/popup.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/dimmer.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/rating.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/transition.js"></script>
+<!--
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"></link>
+<style type="text/css">
+	body > .ui.container {
+		margin-top: 3em;
+	}
+	iframe {
+		border: none;
+		width: calc(100% + 2em);
+		margin: 0em -1em;
+		height: 300px;
+	}
+	iframe html {
+		overflow: hidden;
+	}
+	iframe body {
+		padding: 0em;
+	}
+
+	.pusher {
+	  display: flex;
+	  min-height: 100vh;
+	  flex-direction: column;
+	}
+  .pusher > .footer {
+    flex: 1;
+  }
+  #content{
+  	flex: 1;
+  }
+
+	.ui.container > h1 {
+		font-size: 3em;
+		text-align: center;
+		font-weight: normal;
+	}
+	.ui.container > h2.dividing.header {
+		font-size: 2em;
+		font-weight: normal;
+		margin: 4em 0em 3em;
+	}
+
+
+	.ui.table {
+		table-layout: fixed;
+	}
+
+	#owl-demo .item{
+		margin: 3px;
+	}
+	#owl-demo .item img{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+</style>
+<script>
+	$(document).ready(function() {
+		$("#owl-demo").owlCarousel({
+			autoPlay: 3000,
+			items : 4,
+			itemsDesktop : [1199,3],
+			itemsDesktopSmall : [979,3]
+		});
+
+	});
+</script>
+<script type="application/javascript">
+    $('.ui.avatar.image')
+   .popup({
+    on: 'hover'
+  })
+;
+</script>
+</head>
+<body>
+<div class="pusher">
+	<div class="ui secondary menu">
+		<h3 class="header item">Circle</h3>
+		<a href="./info.html" class="item">info</a>
+		<a href="./list.html" class="item">list</a>
+		<a href="./activity.html" class="item">active</a>
+    <a href="./accounting.html" class="item">account</a>
+		<div class="right menu">
+			<div class="item">
+				<div class="ui action left icon input">
+					<i class="search icon"></i>
+					<input type="text" placeholder="Search">
+					<button class="ui button">Submit</button>
+				</div>
+			</div>
+			<a class="item">Logout</a>
+		</div>
+	</div>
+	<div id="content">
+	<div id="demo">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<div id="owl-demo">
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl1.jpg" alt="Owl Image">
+							</div>
+						</div>
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl2.jpg" alt="Owl Image">
+							</div>
+						</div>
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl3.jpg" alt="Owl Image">
+							</div>
+						</div>
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl4.jpg" alt="Owl Image">
+							</div>
+						</div>
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl5.jpg" alt="Owl Image">
+							</div>
+						</div>
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl6.jpg" alt="Owl Image">
+							</div>
+						</div>
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl7.jpg" alt="Owl Image">
+							</div>
+						</div>
+						<div class="owl-item" style="width: 293px;">
+							<div class="item">
+								<img src="./owl/demos/assets/owl8.jpg" alt="Owl Image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  	<!--h2 class="ui center aligned header">Activity Name</h2-->
+	<div class="ui center aligned container">
+  	<div class="ui center aligned statistic">
+		  <div class="value">
+		    Activity Name
+		  </div>
+		  <div class="label">
+		    16.10.14
+		  </div>
+		</div>
+	  <p>good</p>
+	  <p></p>
+	</div>
+	<div class="ui center aligned container">
+		<div class="ui horizontal list">
+		  <div class="item">
+		    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/tom.jpg" data-title="Matt" data-content="Matt has been a member since July 2014">
+		  </div>
+		  <div class="item">
+		    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/christian.jpg" data-title="Elliot Fu" data-content="Elliot has been a member since July 2012">
+		  </div>
+		  <div class="item">
+		    <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/matt.jpg" data-title="Stevie Feliciano" data-content="Stevie has been a member since August 2013">
+		  </div>
+		</div>
+	</div>
+	</div>
+	<div class="ui vertical footer segment footer">
+        <div class="ui center aligned container">
+        <br>
+            <p><i class="copyright icon"></i>2016. <b>Circle</b> All Rights Reserved.</p>
+        <br>
+        </div>
+    </div>
+</div>
+</body>
+</html>

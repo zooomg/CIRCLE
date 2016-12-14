@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semantic UI</title>
+	<script type="text/javascript" src="assets/js/lib/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<script type="text/javascript" src="assets/js/lib/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"></link>
+  <style type="text/css">
+    body > .ui.container {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+    iframe {
+      border: none;
+      width: calc(100% + 2em);
+      margin: 0em -1em;
+      height: 300px;
+    }
+    iframe html {
+      overflow: hidden;
+    }
+    iframe body {
+      padding: 0em;
+    }
+
+    .pusher {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .pusher > .footer {
+      flex: 1;
+    }
+
+    #content{
+      flex: 1;
+    }
+
+    .ui.container > h1 {
+      font-size: 3em;
+      text-align: center;
+      font-weight: normal;
+    }
+    .ui.container > h2.dividing.header {
+      font-size: 2em;
+      font-weight: normal;
+      margin: 4em 0em 3em;
+    }
+
+
+    .ui.table {
+      table-layout: fixed;
+    }
+  </style>
+</head>
+<body>
+    <div class="pusher">
+	<div class="ui secondary menu">
+		<h3 class="header item">Circle</h3>
+		<a href="./info.html" class="item">info</a>
+		<a href="./list.html" class="item">list</a>
+		<a href="./activity.html" class="item">active</a>
+    <a href="./accounting.html" class="item">account</a>
+    <div class="right menu">
+      <div class="item">
+        <div class="ui action left icon input">
+          <i class="search icon"></i>
+          <input type="text" placeholder="Search">
+          <button class="ui button">Submit</button>
+        </div>
+      </div>
+      <a class="item">Logout</a>
+    </div>
+  </div>
+  <div id="content">
+  <h4 class="ui horizontal divider header">
+    <i class="won icon"></i>
+  </h4>
+  <div class="ui three column divided grid">
+    <div class="three column row">
+      <div class="column">
+        <h3 class="ui center aligned header"> Budget </h3>
+        <table class="ui very basic right aligned table">
+          <thead>
+            <tr><th class="left aligned">Person</th>
+              <th>Calories</th>
+              <th>Fat</th>
+              <th>Protein</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="left aligned">Drema</td>
+              <td>15</td>
+              <td>26g</td>
+              <td>8g</td>
+            </tr>
+            <tr>
+              <td class="left aligned">Nona</td>
+              <td>11</td>
+              <td>21g</td>
+              <td>16g</td>
+            </tr>
+            <tr>
+              <td class="left aligned">Isidra</td>
+              <td>34</td>
+              <td>43g</td>
+              <td>11g</td>
+            </tr>
+            <tr>
+              <td class="left aligned">Bart</td>
+              <td>41</td>
+              <td>40g</td>
+              <td>30g</td>
+            </tr>
+            <tr>
+              <td class="left aligned">Nguyet</td>
+              <td>41</td>
+              <td>44g</td>
+              <td>28g</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="column">
+        <h3 class="ui center aligned header"> Price </h3>
+        <table class="ui very basic right aligned table">
+          <thead>
+            <tr><th class="left aligned">Person</th>
+              <th>Calories</th>
+              <th>Fat</th>
+              <th>Protein</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td class="left aligned">Drema</td>
+                <td>15</td>
+                <td>26g</td>
+                <td>8g</td>
+              </tr>
+              <tr>
+                <td class="left aligned">Nona</td>
+                <td>11</td>
+                <td>21g</td>
+                <td>16g</td>
+              </tr>
+              <tr>
+                <td class="left aligned">Isidra</td>
+                <td>34</td>
+                <td>43g</td>
+                <td>11g</td>
+              </tr>
+              <tr>
+                <td class="left aligned">Bart</td>
+                <td>41</td>
+                <td>40g</td>
+                <td>30g</td>
+              </tr>
+              <tr>
+                <td class="left aligned">Nguyet</td>
+                <td>41</td>
+                <td>44g</td>
+                <td>28g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="column">
+          <h3 class="ui center aligned header"> Settlement </h3>
+          <table class="ui very basic right aligned table">
+            <thead>
+              <tr><th class="left aligned">Person</th>
+                <th>Calories</th>
+                <th>Fat</th>
+                <th>Protein</th>
+              </tr></thead>
+              <tbody>
+                <tr>
+                  <td class="left aligned">Drema</td>
+                  <td>15</td>
+                  <td>26g</td>
+                  <td>8g</td>
+                </tr>
+                <tr>
+                  <td class="left aligned">Nona</td>
+                  <td>11</td>
+                  <td>21g</td>
+                  <td>16g</td>
+                </tr>
+                <tr>
+                  <td class="left aligned">Isidra</td>
+                  <td>34</td>
+                  <td>43g</td>
+                  <td>11g</td>
+                </tr>
+                <tr>
+                  <td class="left aligned">Bart</td>
+                  <td>41</td>
+                  <td>40g</td>
+                  <td>30g</td>
+                </tr>
+                <tr>
+                  <td class="left aligned">Nguyet</td>
+                  <td>41</td>
+                  <td>44g</td>
+                  <td>28g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="ui vertical footer segment  footer">
+        <div class="ui center aligned container">
+        <br>
+            <p><i class="copyright icon"></i>2016. <b>Circle</b> All Rights Reserved.</p>
+        <br>
+        </div>
+    </div>
+    </div>
+  </body>
+  </html>

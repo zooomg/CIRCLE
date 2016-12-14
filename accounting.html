@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semantic UI</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"></link>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/dimmer.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/components/transition.js"></script>
+
+  <style type="text/css">
+    body > .ui.container {
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+    iframe {
+      border: none;
+      width: calc(100% + 2em);
+      margin: 0em -1em;
+      height: 300px;
+    }
+    iframe html {
+      overflow: hidden;
+    }
+    iframe body {
+      padding: 0em;
+    }
+
+    .pusher {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    .pusher > .footer {
+      flex: 1;
+    }
+    #content {
+      flex: 1;
+    }
+
+    .ui.container > h1 {
+      font-size: 3em;
+      text-align: center;
+      font-weight: normal;
+    }
+    .ui.container > h2.dividing.header {
+      font-size: 2em;
+      font-weight: normal;
+      margin: 4em 0em 3em;
+    }
+
+
+    .ui.table {
+      table-layout: fixed;
+    }
+  </style>
+
+  <script>
+    $(document)
+    .ready(function() {
+      $('.special.card .image').dimmer({
+        on: 'hover'
+      });
+      $('.star.rating')
+      .rating()
+      ;
+      $('.card .dimmer')
+      .dimmer({
+        on: 'hover'
+      })
+      ;
+    })
+    ;
+  </script>
+</head>
+<body>
+  <div class="pusher">
+
+
+  	<div class="ui secondary menu">
+  		<h3 class="header item">Circle</h3>
+  		<a href="./info.html" class="item">info</a>
+  		<a href="./list.html" class="item">list</a>
+  		<a href="./activity.html" class="item">active</a>
+      <a href="./accounting.html" class="item">account</a>
+  		<div class="right menu">
+  			<div class="item">
+  		      <div class="ui action left icon input">
+  		        <i class="search icon"></i>
+  		        <input type="text" placeholder="Search">
+  		        <button class="ui button">Submit</button>
+  		      </div>
+  		    </div>
+  		<a class="item">Logout</a>
+  		</div>
+  	</div>
+
+
+
+    <div id="content" class="ui container">
+
+      <div class="ui four cards">
+
+        <a href="./accounting_detail.html" class="ui card">
+          <div class="content">
+            <div class="header">Event name</div>
+            <div class="meta">
+              <span class="category">16.10.15</span>
+            </div>
+            <div class="description">
+              <img src="../Downloads/paragraph.png" class="ui wireframe image">
+            </div>
+          </div>
+          <div class="extra content">
+            <div class="right floated author">
+              <img src="../Downloads/image.png" class="ui avatar image"> Username
+            </div>
+          </div>
+        </a>
+
+        <div class="ui card">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <a class="ui inverted button" href="#">
+                    Add</a>
+                </div>
+              </div>
+            </div>  
+            <div class="ui card" style="margin: 0;">
+              <div class="content">
+                <div class="header">Event name</div>
+                <div class="meta">
+                  <span class="category">16.10.15</span>
+                </div>
+                <div class="description">
+                  <img src="../Downloads/paragraph.png" class="ui wireframe image">
+                </div>
+              </div>
+              <div class="extra content">
+                <div class="right floated author">
+                  <img src="../Downloads/image.png" class="ui avatar image"> Username
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="ui vertical footer segment footer">
+      <div class="ui center aligned container">
+        <br>
+          <p><i class="copyright icon"></i>2016. <b>Circle</b> All Rights Reserved.</p>
+        <br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

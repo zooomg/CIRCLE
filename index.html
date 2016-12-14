@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Semantic UI</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"></link>
+  <style type="text/css">
+    body > .ui.container {
+      margin-top: 3em;
+    }
+    iframe {
+      border: none;
+      width: calc(100% + 2em);
+      margin: 0em -1em;
+      height: 300px;
+    }
+    iframe html {
+      overflow: hidden;
+    }
+    iframe body {
+      padding: 0em;
+    }
+
+    .ui.container > h1 {
+      font-size: 3em;
+      text-align: center;
+      font-weight: normal;
+    }
+    .ui.container > h2.dividing.header {
+      font-size: 2em;
+      font-weight: normal;
+      margin: 4em 0em 3em;
+    }
+ </style>
+</head>
+<body>
+	<div class="ui secondary menu">
+		<h3 class="header item">Circle</h3>
+		<a href="./info.html" class="item">info</a>
+		<a href="./list.html" class="item">list</a>
+		<a href="./activity.html" class="item">active</a>
+    <a href="./accounting.html" class="item">account</a>
+    <div class="right menu">
+      <div class="item">
+        <div class="ui action left icon input">
+          <i class="search icon"></i>
+          <input type="text" placeholder="Search">
+          <button class="ui button">Submit</button>
+        </div>
+      </div>
+      <a class="item">Logout</a>
+    </div>
+  </div>
+  
+</body>
+</html>
